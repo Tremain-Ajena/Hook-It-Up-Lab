@@ -1,5 +1,7 @@
 // import React, { Component } from 'react';
+// import {useParams} from "react-router-dom";
 import React, {useState, useEffect, Fragment} from 'react';
+
 
 
 function Details () {

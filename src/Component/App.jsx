@@ -12,9 +12,9 @@ function App () {
                 <button>
                 <Link to="/">Home</Link>
                 </button>
-                <button>
+                {/* <button>
                 <Link to="/:id/details">Details</Link>
-                </button>
+                </button> */}
                 <Switch>
                     <Route exact path = "/" component={Home} />
                     <Route exact path = "/:id/details" component={Details} />

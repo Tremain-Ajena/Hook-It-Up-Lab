@@ -14,6 +14,7 @@ function Home () {
         getFilms();
     }, []);
 
+    
     // fetch("https://ghibliapi.herokuapp.com/films")
     //         .then((response) => {
     //             return response.json();
@@ -29,7 +30,7 @@ function Home () {
     //         .catch((error => console.log('Could not execute task')));
 
     return (
-        // <div>
+        
         <React.Fragment>
         <h2>Studio Ghibli Filmography</h2>
             
@@ -38,6 +39,9 @@ function Home () {
                     {films.map(films => (
                         <li key={films.id}>
                             {films.title}, {films.release_date}
+                            <button>
+                                <Link to="/:id/details"> Details</Link>
+                            </button>
                         </li>
                     ))}
                 </ul>
